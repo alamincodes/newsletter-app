@@ -5,6 +5,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
 
+*{
+  box-sizing: border-box;
+  /* outline: 3px solid limegreen !important; */
+  /* background: rgba(0 100 0 / 0.1) !important;  */
+}
+::selection{
+  background: black;
+  color: white;
+}
 body {
   margin: 0;
   font-family: 'Rubik', sans-serif;

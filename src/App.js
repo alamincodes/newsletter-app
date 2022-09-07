@@ -7,7 +7,7 @@ import Form from "./Components/Form";
 function App() {
   return (
     <StrictMode>
-      <div className="min-h-screen flex flex-col">
+      <div className="">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
