@@ -17,112 +17,71 @@ const Home = () => {
                 <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold py-2">
                   Md Alamin
                 </h1>
-                <h3 className="text-2xl">Front-end Developer</h3>
+                <h3 className="text-2xl">Front End Developer</h3>
               </div>
             </div>
             {/* -----------card---------------- */}
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5">
-              <div class="relative block md:w-[250px] lg:w-[250px] w-[250px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24  rounded-sm shadow-xl">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5 ">
+              {/* =========================== */}
+              <div class="relative block md:w-[250px] lg:w-[250px] w-[350px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24  rounded-sm shadow-xl">
                 <p class="mt-4  font-medium text-black-">
                   If you are a front end developer and you love to share your
-                  experience.
+                  experience.{" "}
                   <a
                     href="mailto:mdalamin88248@gmail.com"
                     className="text-purple-600 underline"
                   >
-                    Mail me
+                    Mail Me
                   </a>
                 </p>
               </div>
-              <div class="relative block md:w-[250px] lg:w-[250px] w-[250px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24  rounded-sm shadow-xl">
+              <div class="relative block md:w-[250px] lg:w-[250px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24  rounded-sm shadow-xl">
                 <p class="mt-4  font-medium text-black">
-                  I have a{" "}
+                  Follow my{" "}
                   <Link className="text-purple-600 underline" to="/newsletter">
-                    newsletter
+                    Newsletter
                   </Link>
-                  , where I write about the things I learned, explored and
-                  project I am working on.
+                  , where I share things I learned, explored and projects I am
+                  currently working on.
                 </p>
               </div>
             </div>
             {/* ========button ==========*/}
 
             <div className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-2 ">
-              <button className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center ">
-                GitHub
-              </button>
-              <button className="border-2 border-black px-4 py-3 lg:px-8 md:px-8 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center">
-                Instagram
-              </button>
-              <button className="border-2 border-black px-4 py-3 lg:px-8 md:px-8 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center">
-                Linkedin
-              </button>
-              <button className="border-2 border-black px-4 py-3 lg:px-8 md:px-8 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center">
-                Portfolio
-              </button>
-            </div>
-
-            {/* <div className="mx-5 my-5 ">
-              <div className="mt-3 text-center md:text-start ">
-                <p>
-                  If you are a front end developer and you love to share your
-                  experience.
-                </p>
-                <p>
-                  <button
-                    href="mailto:mdalamin88248@gmail.com"
-                    className="text-purple-600 underline"
-                  >
-                    Mail me
-                  </button>{" "}
-                  if you want to talk to me about something.
-                </p>
-
-                <button className="my-5">
-                  I have a{" "}
-                  <Link className="text-purple-600 underline" to="/newsletter">
-                    newsletter
-                  </Link>
-                  , where I write about the things I learned, explored and
-                  project I am working on.
-                </button>
-              </div>
-            </div> */}
-            {/* -------------------------------- */}
-            {/* <div className="mt-5 flex justify-center md:justify-start mx-5 ">
-              <button
-                class="mr-2 inline-flex w-auto  items-center px-5 py-3 text-sm  font-medium text-white transition-colors bg-[#171515] border-2 border-[#171515] rounded hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+              <a
                 href="https://github.com/alamincodes"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center "
               >
                 GitHub
-              </button>
-              <button
-                class="mr-2 inline-flex w-auto  items-center px-5 py-3 text-sm  font-medium text-black transition-colors bg-white border-2 border-[#171515] rounded hover:bg-transparent hover:text-white  hover:bg-[#171515] focus:outline-none focus:ring active:opacity-75"
-                href="https://www.instagram.com/alamincodes"
+              </a>
+              <a
+                href="https://www.instagram.com/alamincodes/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center"
               >
                 Instagram
-              </button>
-              <button
-                class="mr-2 inline-flex w-auto  items-center px-5 py-3 text-sm  font-medium text-white transition-colors bg-[#171515] border-2 border-[#171515] rounded hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+              </a>
+              <a
                 href="https://www.linkedin.com/in/alamincodes/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center"
               >
                 Linkedin
-              </button>
-              <button
-                class="mr-2 inline-flex w-auto  items-center px-5 py-3 text-sm  font-medium text-black transition-colors bg-white border-2 border-[#171515] rounded hover:bg-transparent hover:text-white  hover:bg-[#171515] focus:outline-none focus:ring active:opacity-75"
+              </a>
+              <a
                 href="https://alamincodes.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center"
               >
                 Portfolio
-              </button>
-            </div> */}
+              </a>
+            </div>
           </div>
         </div>
       </main>
