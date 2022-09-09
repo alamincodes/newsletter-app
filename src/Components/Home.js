@@ -20,11 +20,11 @@ const Home = () => {
                 <h3 className="text-2xl">Front End Developer</h3>
               </div>
             </div>
-            {/* -----------card---------------- */}
+           {/* ===============================card====================================== */}
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5 ">
               {/* =========================== */}
-              <div class="relative block md:w-[250px] lg:w-[250px] w-[350px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24  rounded-sm shadow-xl">
-                <p class="mt-4  font-medium text-black-">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24 rounded-[10px] shadow-xl border">
+                <p className="mt-2  font-medium text-black">
                   If you are a front end developer and you love to share your
                   experience.{" "}
                   <a
@@ -35,8 +35,8 @@ const Home = () => {
                   </a>
                 </p>
               </div>
-              <div class="relative block md:w-[250px] lg:w-[250px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24  rounded-sm shadow-xl">
-                <p class="mt-4  font-medium text-black">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-xl border">
+                <p className="mt-2 font-medium text-black">
                   Follow my{" "}
                   <Link className="text-purple-600 underline" to="/newsletter">
                     Newsletter

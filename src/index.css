@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
 
+::placeholder{
+  font-size: 18px;
+}
 *{
   box-sizing: border-box;
   /* outline: 3px solid limegreen !important; */
