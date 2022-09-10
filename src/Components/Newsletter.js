@@ -1,13 +1,8 @@
 import React from "react";
-import Working from "../images/working.png";
 import NewsletterSvg from "../images/Newsletter.svg";
 const Newsletter = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-2xl">
-      {/* <img src={Working} className="w-24 animate-pulse" alt="" />
-      <p>Newsletter, work in progress...</p>
-       */}
-
       <aside className="bg-gray-50">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="max-w-lg mx-auto text-center">
