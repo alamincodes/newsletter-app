@@ -6,14 +6,6 @@
     "answer": "The content inside the HTML tag is called innerHTML. example: <p>Hello<p>",
     "userGithubLink": "https://github.com/alamincodes",
     "status": "verified"
-  },
-  {
-    "id": 2,
-    "name": "Md Alamin",
-    "question": "Lorem ispam",
-    "answer": "Lore delectus ut totam natus nesciunt ex? Ducimus, enim.",
-    "userGithubLink": "https://github.com/alamincodes",
-    "status": "no"
   }
   
 ]

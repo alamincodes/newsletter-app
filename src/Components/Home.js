@@ -15,15 +15,15 @@ const Home = () => {
               />
               <div className="ml-5 my-2 flex flex-col text-center md:text-start ">
                 <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold py-2">
-                  Md Alamin
+                  Md Alamin 
                 </h1>
                 <h3 className="text-2xl">Front End Developer</h3>
               </div>
             </div>
             {/* ===============================card====================================== */}
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5 ">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5 mx-2">
               {/* ===========mail me card================ */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24 rounded-[10px] shadow-xl border">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24 rounded-[10px] border shadow-md">
                 <p className="mt-2  font-medium text-black">
                   If you are a front end developer and you love to share your
                   experience.{" "}
@@ -36,7 +36,7 @@ const Home = () => {
                 </p>
               </div>
               {/* --------newsletter card--------- */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-xl border">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-md border">
                 <p className="mt-2 font-medium text-black">
                   Follow my{" "}
                   <Link className="text-purple-600 underline" to="/newsletter">
@@ -47,7 +47,7 @@ const Home = () => {
                 </p>
               </div>
               {/* ----------Notes card---------- */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-xl border">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-md border">
                 <p className="mt-2 font-medium text-black">
                   Follow our
                   <Link className="text-purple-600 mx-1 underline" to="/notes">

@@ -5,10 +5,10 @@ import userNotes from "../userNotes.json";
 import { Link } from "react-router-dom";
 const Notes = () => {
   return (
-    <div className="max-w-7xl	lg:mx-auto lg:px-12 md:px-12 ">
+    <div className="max-w-7xl	lg:mx-auto lg:px-12 md:px-12">
       {/* ==============navbar start================= */}
-      <div className="flex justify-between items-center bg-white shadow-xl lg:rounded-md md:rounded-md ">
-        <h3 className=" text-center lg:text-4xl md:text-4xl text-2xl mb-4 font-bold text-black p-1 mx-2">
+      <div className="flex justify-between items-center bg-white shadow-xl lg:rounded-md md:rounded-md">
+        <h3 className="lg:text-3xl pt-5 md:text-3xl text-2xl mb-4 font-bold text-black p-1 mx-2">
           Developer Notes.
         </h3>
 

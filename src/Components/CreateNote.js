@@ -1,11 +1,18 @@
 import React from "react";
-import Working from "../images/working.png";
 
 const CreateNote = () => {
+  
   return (
-    <div className="flex justify-center items-center flex-col min-h-screen">
-      <img src={Working} className="w-24 animate-pulse" alt="" />
-      <p>Create Note, work in progress...</p>
+    <div className="flex justify-center items-center ">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfQIe52t7r0ZqKxHZcrnTpVYoQAxhu-cYUPUsqXSh9N6vlEMQ/viewform?embedded=true"
+        width="640"
+        height="812"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+      </iframe>
     </div>
   );
 };
