@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Newsletter from "./Components/Newsletter";
 import Notes from "./Components/Notes";
 import CreateNote from "./Components/CreateNote";
+import Team from "./Components/Team";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/newsletter" element={<Newsletter />} />
             <Route path="/notes" element={<Notes />} />
             <Route path="/createNote" element={<CreateNote/>} />
+            <Route path="/team" element={<Team/>} />
           </Routes>
         </BrowserRouter>
       </div>

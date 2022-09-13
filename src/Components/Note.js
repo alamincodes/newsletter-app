@@ -1,11 +1,11 @@
 import React from "react";
 
 const Note = ({ note, alaminImg }) => {
-  const { name, question, answer, status, userGithubLink } = note;
+  const { name, question, answer, status,imgUrl, userGithubLink } = note;
   return (
     <div className="bg-white border-2 border-gray-100 rounded-xl hover:shadow-md  hover:mt-[-5px]">
       <div className="flex justify-end">
-        {status == "verified" && <strong className="-mr-[2px] -mb-[2px] inline-flex items-center gap-1 rounded-tr-xl rounded-bl-xl rounded bg-green-600 py-1.5 px-3 text-white">
+        {status == "verified" ? <strong className="-mr-[2px] -mb-[2px] inline-flex items-center gap-1 rounded-tr-xl rounded-bl-xl rounded bg-green-600 py-1.5 px-3 text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-4 h-4"
@@ -21,12 +21,18 @@ const Note = ({ note, alaminImg }) => {
             />
           </svg>
 
-          <span className="text-[10px] font-medium sm:text-xs">{status}</span>
+          <span className="text-[10px] font-medium sm:text-xs">verified</span>
+        </strong>
+        :
+        <strong className="-mr-[2px] -mb-[2px] inline-flex items-center gap-1 rounded-tr-xl rounded-bl-xl rounded bg-yellow-300 py-1.5 px-3 text-gray-900">
+          
+
+          <span className="text-[10px] font-medium sm:text-xs">Unknown</span>
         </strong>}
       </div>
       <div className="flex items-start p-6">
         <img
-          src={alaminImg}
+          src={imgUrl? imgUrl : alaminImg}
           alt={name}
           className="object-cover rounded-lg h-14 w-14"
         />

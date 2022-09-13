@@ -17,8 +17,8 @@ const Notes = () => {
       </div>
       <div className=" grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-4 p-2">
         {/* ========================notes======================== */}
-        {userNotes.map((note) => (
-          <Note key={note.id} note={note} alaminImg={Alamin} />
+        {userNotes && userNotes.map((note) => (
+          <Note key={note.id} note={note} alaminImg={Alamin}/>
         ))}
       </div>
     </div>

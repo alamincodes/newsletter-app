@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Profile from "../images/IMG_20220907_145052.jpg";
+import Footer from "./Footer";
 const Home = () => {
   return (
     <div className=" flex-1 flex flex-col">
@@ -15,7 +16,7 @@ const Home = () => {
               />
               <div className="ml-5 my-2 flex flex-col text-center md:text-start ">
                 <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold py-2">
-                  Md Alamin 
+                  Md Alamin
                 </h1>
                 <h3 className="text-2xl">Front End Developer</h3>
               </div>
@@ -23,7 +24,7 @@ const Home = () => {
             {/* ===============================card====================================== */}
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5 mx-2">
               {/* ===========mail me card================ */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[150px] md:h-[130px] p-2 my-1 pb-24 rounded-[10px] border shadow-md">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[130px] md:h-[130px] p-2 my-1 pb-24 rounded-[5px]  shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
                 <p className="mt-2  font-medium text-black">
                   If you are a front end developer and you love to share your
                   experience.{" "}
@@ -36,7 +37,7 @@ const Home = () => {
                 </p>
               </div>
               {/* --------newsletter card--------- */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-md border">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[130px] md:h-[130px] p-2 my-1 rounded-[5px] shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
                 <p className="mt-2 font-medium text-black">
                   Follow my{" "}
                   <Link className="text-purple-600 underline" to="/newsletter">
@@ -47,7 +48,7 @@ const Home = () => {
                 </p>
               </div>
               {/* ----------Notes card---------- */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[150px] md:h-[130px] p-2 my-1 rounded-[10px] shadow-md border">
+              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[130px] md:h-[130px] p-2 my-1 rounded-[5px] shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
                 <p className="mt-2 font-medium text-black">
                   Follow our
                   <Link className="text-purple-600 mx-1 underline" to="/notes">
@@ -62,7 +63,7 @@ const Home = () => {
 
             <div className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 ">
               <Link to="/notes">
-                <p className="border-2 px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white border-purple-600  hover:bg-purple-300  hover:border-purple-300 text-purple-600  hover:text-purple-600 flex items-center justify-center">
+                <p className="border-2 px-4  lg:px-8 md:px-8  py-3 rounded-[5px] bg-white border-purple-600  hover:bg-purple-300  hover:border-purple-300 text-purple-600  hover:text-purple-600 flex items-center justify-center">
                   Notes
                 </p>
               </Link>
@@ -109,6 +110,10 @@ const Home = () => {
           </div>
         </div>
       </main>
+      
+      <footer className="flex justify-center items-center lg:mt-[-50px] md:mt-[-20px] mt-10 border-t-2">
+        <Footer/>
+      </footer>
     </div>
   );
 };
