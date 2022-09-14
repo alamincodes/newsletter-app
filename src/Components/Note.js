@@ -3,7 +3,7 @@ import React from "react";
 const Note = ({ note, alaminImg }) => {
   const { name, question, answer, status,imgUrl, userGithubLink } = note;
   return (
-    <div className="bg-white border-2 border-gray-100 rounded-xl hover:shadow-md  hover:mt-[-5px]">
+    <div className="bg-white border-2 border-gray-100 rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.1)]   hover:shadow-[0_3px_10px_rgb(0,0,0,0.4)]">
       <div className="flex justify-end">
         {status == "verified" ? <strong className="-mr-[2px] -mb-[2px] inline-flex items-center gap-1 rounded-tr-xl rounded-bl-xl rounded bg-green-600 py-1.5 px-3 text-white">
           <svg

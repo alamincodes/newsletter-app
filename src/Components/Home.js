@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Profile from "../images/IMG_20220907_145052.jpg";
 import Footer from "./Footer";
+import noteIcon from '../images/note.png';
 const Home = () => {
   return (
     <div className=" flex-1 flex flex-col">
@@ -63,12 +64,12 @@ const Home = () => {
 
             <div className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 ">
               <Link to="/notes">
-                <p className="border-2 px-4  lg:px-8 md:px-8  py-3 rounded-[5px] bg-white border-purple-600  hover:bg-purple-300  hover:border-purple-300 text-purple-600  hover:text-purple-600 flex items-center justify-center">
-                  Notes
+                <p className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center ">
+                  Notes <span><img src={noteIcon} className="w-5" alt="" /> </span>
                 </p>
               </Link>
               <Link to="/newsletter">
-                <p className="border-2 px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white border-purple-600  hover:bg-purple-300  hover:border-purple-300 text-purple-600  hover:text-purple-600 flex items-center justify-center">
+                <p className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center  ">
                   Newsletter
                 </p>
               </Link>
@@ -78,7 +79,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center "
               >
-                GitHub
+                GitHub 
               </a>
 
               <a
@@ -110,9 +111,9 @@ const Home = () => {
           </div>
         </div>
       </main>
-      
+
       <footer className="flex justify-center items-center lg:mt-[-50px] md:mt-[-20px] mt-10 border-t-2">
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );

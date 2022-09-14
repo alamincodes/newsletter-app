@@ -1,23 +1,21 @@
 [
-    {
-      "id": 1,
-      "name": "Md Alamin",
-      "post": "Front End Developer",
-      "imgUrl":"https://avatars.githubusercontent.com/u/76772542?s=400&u=f691513c778bf0162fa1a7eeb892d36c837cf390&v=4"
-     
-    },
-    {
-      "id": 2,
-      "name": "Rahman Rakib",
-      "post": "Front End Developer",
-      "imgUrl":"https://avatars.githubusercontent.com/u/76882161?v=4"
-    },
-    {
-      "id": 3,
-      "name": "Srejon Khan",
-      "post": "back End Developer",
-      "imgUrl":"https://avatars.githubusercontent.com/u/57011529?v=4"
-    }
+  {
+    "id": 1,
+    "name": "Md Alamin",
+    "post": "Front End Developer",
+    "imgUrl": "https://avatars.githubusercontent.com/u/76772542?s=400&u=f691513c778bf0162fa1a7eeb892d36c837cf390&v=4"
+  },
+  {
+    "id": 2,
+    "name": "Rahman Rakib",
+    "post": "Front End Developer",
+    "imgUrl": "https://avatars.githubusercontent.com/u/76882161?v=4"
+  },
+  {
+    "id": 3,
+    "name": "Srejon Khan",
+    "post": "back End Developer",
+    "imgUrl": "https://avatars.githubusercontent.com/u/57011529?v=4"
     
-  ]
-  
+  }
+]

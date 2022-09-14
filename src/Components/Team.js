@@ -25,7 +25,7 @@ const Team = () => {
                   alt=""
                 />
                 <div className="relative p-8">
-                  <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                  <p className="text-sm font-medium tracking-widest text-purple-500 uppercase">
                     {developer.post}
                   </p>
 
@@ -36,10 +36,7 @@ const Team = () => {
                   <div className="mt-64">
                     <div className="opacity-0 transition-all transform translate-y-8  group-hover:opacity-100 group-hover:translate-y-0">
                       <p className="text-sm text-white">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Omnis perferendis hic asperiores quibusdam quidem
-                        voluptates doloremque reiciendis nostrum harum.
-                        Repudiandae?
+                       
                       </p>
                     </div>
                   </div>
