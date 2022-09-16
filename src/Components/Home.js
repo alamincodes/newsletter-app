@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Profile from "../images/IMG_20220907_145052.jpg";
 import Footer from "./Footer";
-import noteIcon from '../images/note.png';
+import noteIcon from "../images/note.png";
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className=" flex-1 flex flex-col">
@@ -25,7 +26,12 @@ const Home = () => {
             {/* ===============================card====================================== */}
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:mt-0 lg:mt-0 mt-[-30px] lg:gap-5 md:gap-5 mx-2">
               {/* ===========mail me card================ */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[130px] md:h-[130px] p-2 my-1 pb-24 rounded-[5px]  shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[100px] lg:h-[130px] md:h-[130px] p-2 my-1 pb-24 rounded-[5px]  shadow-[0_3px_10px_rgb(0,0,0,0.1)]"
+              >
                 <p className="mt-2  font-medium text-black">
                   If you are a front end developer and you love to share your
                   experience.{" "}
@@ -36,9 +42,14 @@ const Home = () => {
                     Mail Me
                   </a>
                 </p>
-              </div>
+              </motion.div>
               {/* --------newsletter card--------- */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[130px] md:h-[130px] p-2 my-1 rounded-[5px] shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[130px] md:h-[130px] p-2 my-1 rounded-[5px] shadow-[0_3px_10px_rgb(0,0,0,0.1)]"
+              >
                 <p className="mt-2 font-medium text-black">
                   Follow my{" "}
                   <Link className="text-purple-600 underline" to="/newsletter">
@@ -47,9 +58,14 @@ const Home = () => {
                   , where I share things I learned, explored and projects I am
                   currently working on.
                 </p>
-              </div>
+              </motion.div>
               {/* ----------Notes card---------- */}
-              <div className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[130px] md:h-[130px] p-2 my-1 rounded-[5px] shadow-[0_3px_10px_rgb(0,0,0,0.1)]">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="relative block md:w-[300px] lg:w-[350px] w-[350px] h-[130px] lg:h-[130px] md:h-[130px] p-2 my-1 rounded-[5px] shadow-[0_3px_10px_rgb(0,0,0,0.1)]"
+              >
                 <p className="mt-2 font-medium text-black">
                   Follow our
                   <Link className="text-purple-600 mx-1 underline" to="/notes">
@@ -58,14 +74,21 @@ const Home = () => {
                   , where we share experiences about the front end. And you can
                   also share your experience with us.
                 </p>
-              </div>
+              </motion.div>
             </div>
             {/* ========button ==========*/}
 
-            <div className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 ">
+            <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 0.5}}
+            className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 ">
               <Link to="/notes">
                 <p className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center ">
-                  Notes <span><img src={noteIcon} className="w-5" alt="" /> </span>
+                  Notes{" "}
+                  <span>
+                    <img src={noteIcon} className="w-5" alt="" />{" "}
+                  </span>
                 </p>
               </Link>
               <Link to="/newsletter">
@@ -79,7 +102,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center "
               >
-                GitHub 
+                GitHub
               </a>
 
               <a
@@ -107,7 +130,7 @@ const Home = () => {
               >
                 Linkedin
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
       </main>
