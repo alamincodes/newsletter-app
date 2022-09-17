@@ -12,20 +12,20 @@ const Team = () => {
           </h3>
         </div>
         {/* Developer card*/}
-        <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-3">
+        <div className=" grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-3  gap-x-0 ">
           {Developers.map((developer) => (
             <div
               key={developer.id}
               className="flex  justify-center items-center mt-14"
             >
-              <div className="relative block bg-black group lg:w-[350px] mx-2">
+              <div className="relative block bg-black group lg:w-[350px] md:w-[350px] w-[350px] mx-2">
                 <img
                   className="absolute inset-0 object-cover w-full h-full opacity-75 transition-opacity  group-hover:opacity-50"
                   src={developer.imgUrl? developer.imgUrl : Alamin}
                   alt=""
                 />
                 <div className="relative p-8">
-                  <p className="text-sm font-medium tracking-widest text-purple-500 uppercase">
+                  <p className="text-sm font-medium tracking-widest text-red-500 uppercase">
                     {developer.post}
                   </p>
 

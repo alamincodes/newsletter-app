@@ -37,7 +37,7 @@ const Home = () => {
                   experience.{" "}
                   <a
                     href="mailto:mdalamin88248@gmail.com"
-                    className="text-purple-600 underline"
+                    className="text-red-500 underline"
                   >
                     Mail Me
                   </a>
@@ -52,7 +52,7 @@ const Home = () => {
               >
                 <p className="mt-2 font-medium text-black">
                   Follow my{" "}
-                  <Link className="text-purple-600 underline" to="/newsletter">
+                  <Link className="text-red-500 underline" to="/newsletter">
                     Newsletter
                   </Link>
                   , where I share things I learned, explored and projects I am
@@ -68,7 +68,7 @@ const Home = () => {
               >
                 <p className="mt-2 font-medium text-black">
                   Follow our
-                  <Link className="text-purple-600 mx-1 underline" to="/notes">
+                  <Link className="text-red-500 mx-1 underline" to="/notes">
                     Notes
                   </Link>
                   , where we share experiences about the front end. And you can
@@ -79,17 +79,24 @@ const Home = () => {
             {/* ========button ==========*/}
 
             <motion.div
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration: 0.5}}
-            className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 ">
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="mt-5 grid lg:grid-cols-4 md:grid-cols-4 grid-cols-3 gap-2 "
+            >
               <Link to="/notes">
-                <p className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center ">
-                  Notes{" "}
-                  <span>
-                    <img src={noteIcon} className="w-5" alt="" />{" "}
+                <button class="relative lg:px-14 px-10 md:px-14 py-[14px] flex items-center justify-center   overflow-hidden font-medium transition-all bg-red-500  group">
+                  <span class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-red-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                    <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
                   </span>
-                </p>
+                  <span class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-red-600 group-hover:mb-12 group-hover:translate-x-0"></span>
+                  <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                    Notes{" "}
+                    
+                      {/* <img src={noteIcon} className="w-5" alt="" /> */}
+                    
+                  </span>
+                </button>
               </Link>
               <Link to="/newsletter">
                 <p className="border-2 border-black px-4 lg:px-8 md:px-8  py-3 rounded-[5px] bg-white hover:bg-black hover:text-white flex items-center justify-center  ">

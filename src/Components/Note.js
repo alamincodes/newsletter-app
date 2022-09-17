@@ -38,7 +38,7 @@ const Note = ({ note, alaminImg }) => {
         />
 
         <div className="ml-4">
-          <strong className="font-medium text-purple-700 sm:text-lg">
+          <strong className="font-medium text-red-500 sm:text-lg">
             <p>{question}</p>
           </strong>
 
@@ -54,7 +54,7 @@ const Note = ({ note, alaminImg }) => {
                     href={userGithubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mx-1 font-medium underline text-purple-700"
+                    className="mx-1 font-medium underline text-red-500"
                   >
                     {name}
                   </a>

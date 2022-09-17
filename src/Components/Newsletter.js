@@ -1,5 +1,5 @@
 import React from "react";
-import NewsletterSvg from "../images/Newsletter.svg";
+import NewsletterSvg from "../images/Newsletter-web.svg";
 const Newsletter = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-2xl">
